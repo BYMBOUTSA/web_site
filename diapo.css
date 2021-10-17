@@ -13,7 +13,7 @@ body {
     background-image: url("img/img.jpg");
 
     -webkit-animation-name: diapo1;
-    -webkit-animation-duration: 10s;
+    -webkit-animation-duration: 20s;
     -webkit-animation-timing-function: linear;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-direction: normal;
