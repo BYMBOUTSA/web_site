@@ -10,65 +10,126 @@
     <link rel="stylesheet" href="contact.css">
 </head>
 <body>
-    <center><h1>Contact</h1></center>
-    <h2 id="connexion">Connectez-vous </h2>
+    
     <header>
-
-        <div id="logos">
-            <a href="https://gmail.com" target="blank">
-                <img src="img/logo_gmail.jpg" alt="logo de gmail" width="70px"/>
-            </a>
-            <a href="https://accounts.snapchat.com" target="blank">
-                <img src="img/logo_snapchat.jpg" alt="logo de snapchat" width="70px">
-            </a>
-            <a href="https://messenger.com" target="blank">
-                <img src="img/logo_messenger.png" alt="logo de messenger" width="70px">
-            </a>
-            <a href="https://linkedin.com" target="blank">
-                <img src="img/logo_linkedin.png" alt="logo de linkedin" width="70px">
-            </a>
-            <a href="https://whatsapp.com" target="blank">
-                <img src="img/logo_whatsapp.png" alt="logo de whatsapp" width="70px">
-            </a>
-            <a href="https://facebook.com" target="blank">
-                <img src="img/logo_facebook.png" alt="logo de facebook" width="70px">
-            </a>
-            <a href="https://instagram.com" target="blank">
-                <img src="img/logo_instagram.png" alt="logo d'instagram" width="70px">
-            </a>
-        </div>
-       
+        <center><h1>Contact</h1></center>
+        
+        <nav class="menu-nav">
+            <ul>
+                <li class="btn" id="acc">
+                    <a href="index.html">Accueil</a>
+                </li>
+                <li class="btn" id="act">
+                    <a href="news.html">Actualités</a>
+                </li>
+                <li class="btn" id="con">
+                    <a href="contact.html">Contact</a>
+                </li>
+                <li class="btn" id="de">
+                    <a href="dedicace.html">Dédicace</a>
+                </li>
+            </ul>
+        </nav>
+        <div id="up"><a href="#">En haut SVP !</a></div>
     </header>
-    
-    <h2 id="kids">Veuillez contacter les KIDS</h2>
-    <p>Par mail à l'adresse : <mark>leskids20@gmail.com</mark> </p>
-    <h2 class="fin">Veuillez me contacter</h2>
-   <footer>
-    <p>Par mail à l'adresse :  <strong>charlymoundounga3@gmail.com</strong> </p>
-    <p>sur le snapchat suivant : Charly Moundounga</p>
-    <p>sur messenger : Charly Moundounga</p>
-    <p>sur linkedin : Charly Darcy BYMBOUTSA MOUNDOUNGA </p>
-    
-   </footer>
-    <ul>
-        <li>G</li>
-        <li>O</li>
-        <li>D</li>
-        <li>_</li>
-        <li>B</li>
-        <li>L</li>
-        <li>E</li>
-        <li>S</li>
-        <li>S</li>
-        <li>_</li>
-        <li>Y</li>
-        <li>O</li>
-        <li>U</li>
-        <li>_</li>
-        <li>A</li>
-        <li>L</li>
-        <li>L</li>
 
-    </ul>
+    <section>
+        <article>
+            <h2 id="kids">Veuillez contacter les KIDS</h2>
+             <p>Par mail à l'adresse : <mark>leskids20@gmail.com</mark> </p>
+        </article>
+    </section>
+    
+    
+    <section>
+        <article>
+            <h2 class="fin">Veuillez me contacter</h2>
+            <p>Par mail à l'adresse :  <strong>charlymoundounga3@gmail.com</strong> </p>
+            <p>sur le snapchat suivant : Charly Moundounga</p>
+            <p>sur messenger : Charly Moundounga</p>
+            <p>sur linkedin : Charly Darcy BYMBOUTSA MOUNDOUNGA </p>
+        </article>
+    </section>
+
+    <!-- Deuxième méthode de formulaire -->
+    <div class="container">
+        <h2 id="forml">Créer Votre Compte</h2>
+        <input class="i" type="text" placeholder="Nom..." required><br>
+        <input class="i" type="text" placeholder="Prenom..." required><br>
+        <input class="i" type="email" placeholder="Email.." required><br>
+        <input class="i" type="text" placeholder="Username..." required><br>
+        <input class="i" type="password" placeholder="Mot de passe..." required><br>
+        <button>Se connecter</button>
+    </div> 
+
+
+    <!-- Troisième méthode de formulaire -->
+    <section>
+        <div class="conteneur">
+            <form class="form" action="#.php" method="POST">
+                <h4><u>Gestion d'un Formulaire</u></h4><br>
+
+                <fieldset>
+                    <legend>Infos Persos:</legend>
+                    <label for="Nom">Nom:</label>
+                    <input type="text" required="required" name="Nom" placeholder="Votre nom, SVP">
+                    <label for="prenom">Prenom:</label>
+                    <input type="text" name="prenom" id="prenom" placeholder="Votre prenom, SVP">
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Nouveautés</legend>
+                    <label for="tel">Téléphone:</label>
+                    <input type="tel" name="tel" id="tel" placeholder="Votre téléphone, SVP">
+                    <label for="date">Date:</label>
+                    <input type="date" name="date" id="date" placeholder="Date, SVP">
+                    <label for="file">Fichier:</label>
+                    <input type="file" name="file" id="file">
+                    <label for="number">Quel est votre pointure:</label>
+                    <input type="number" name="number" id="number" min="32" max="54" step="5" value="38">
+                    <label for="range">Volume:</label>
+                    <input type="range" name="range" id="range" min="00" max="100" step="1">
+                    <label for="color">Donnez une couleur:</label>
+                    <input type="color" name="color" id="color" value="#ccc">
+                    <label for="progress">Barre de progression:</label>
+                    <progress id="progress" name="progress" value="20" max="100"></progress>
+                </fieldset>
+                <br><br>
+                <p>
+                    <input type="submit" value="Envoyer"/>
+                    <input type="reset" value="Annuler"/>
+                </p>
+
+            </form>
+        </div>
+    </section>
+
+
+   <footer>
+        <ul class="bye">
+            <li>G</li>
+            <li>O</li>
+            <li>D</li>
+            <li>_</li>
+            <li>B</li>
+            <li>L</li>
+            <li>E</li>
+            <li>S</li>
+            <li>S</li>
+            <li>_</li>
+            <li>Y</li>
+            <li>O</li>
+            <li>U</li>
+            <li>_</li>
+            <li>A</li>
+            <li>L</li>
+            <li>L</li>
+
+        </ul>
+
+        <p>Copyright &copy; Charly Darcy for my family - 2021-2022 - All Right Reserved</p>
+
+    </footer>
 </body>
 </html>

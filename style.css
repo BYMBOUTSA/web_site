@@ -1,5 +1,27 @@
+/* Feuille de style de l'accueil ou encore index.html */
+
+/* Importation d'une font */
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Lobster&family=Roboto+Condensed:wght@300&display=swap');
+
+
+/* Reset du BODY */
+body {
+    /*padding: 15px;*/ 
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    background-color: whitesmoke;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
 div#content{
     background-color: grey;
+    padding: 5px;
+    border-radius: 5px;
+    width: 90%;
+    left: 5%;
+    margin: 25px;
 }
 
 div#content div{
@@ -28,6 +50,35 @@ div#content div.annonce {
 
 }
 
+div.annonce img{
+    border-radius: 50%;
+}
+
+
+/* Gestion de la balise contenant en haut SVP */
+
+#up a {
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    background-color: #58ACFA;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+#up a:hover {
+    background-color: #fff;
+    color: #58ACFA;
+    border: 1px solid #58ACFA;
+    text-decoration: underline;
+}
+
+
+/* Gestion du menu de navigation */
+
 nav.menu-nav ul li.btn {
     display: inline-block;
 } 
@@ -37,37 +88,61 @@ nav.menu-nav ul li.btn {
 }
 
 nav.menu-nav ul li.btn a {
-    color: white;
-    background-color: red;
+    color: #ffffff;
+    background-color: #FA3D21;
     text-decoration: none;
     padding: 10px;
-
+    border-radius: 5px;
 }
 
 
 nav.menu-nav ul li.btn:hover a {
-    color: red;
-    background-color: white;
+    color: #FA3D21;
+    background-color: #43D0FA;
+    text-decoration: underline;
     transition: 0.3s all;
-
+    border-radius: 20px;
 }
 
-div.annonce img{
-    border-radius: 50%;
+
+/*###################################################*/
+/*              Gestion des pseudos éléments         */
+/*###################################################*/
+
+/* Gestion du pseudo élément de l'accueil */
+#acc::before {
+    content: url("img/LOGO KIDS20-FINAL.gif");
+    vertical-align: middle;
+    display: inline-block;
 }
 
-body {
-     /*background: url(https://cdn.shopify.com/s/files/1/0055/3510/5117/products/fr-050.png?v=1555639283) no-repeat;
-    background-size: 25%;*/
-    background-color: grey;
-
+/* Gestion du pseudo élément de l'actualité */
+#act::before {
+    content: url(img/icon_news.png);
+    vertical-align: middle;
+    display: inline-block;
 }
 
+/* Gestion du pseudo élément du contact */
+#con::before {
+    content: url("img/icon_contact.jpg");
+    vertical-align: middle;
+    display: inline-block;
+}
+
+/* Gestion du pseudo élément de la dédicace */
+#de::before {
+    content: url("img/icon_dédicace.jpg");
+    vertical-align: middle;
+    display: inline-block;
+}
 
  h1.welcome {
+    text-align: center;
     list-style: none;
     font-size: 40px;
     animation:flash 1.5s infinite;
+    font-family: 'Gloria Hallelujah', cursive;
 } 
 
 @keyframes flash {
@@ -170,6 +245,11 @@ h1.welcome:nth-child(29) {
     animation-delay: 2.9s;
 }*/
 
+
+h2 {
+    text-indent: 1.5em;
+}
+
 h1 {
     list-style: none;
     font-size: 40px;
@@ -182,21 +262,14 @@ h1 {
     }
 }
 
+
+/* Gestion du HEADER */
 header {
     position: relative;
     width: 80%;
     text-align: center;
-    left: 10%;
-    
-}
-
-
-footer {
-    position: relative;
-    width: 80%;
-    left: 10%;
-    border: 1px solid blue;
-    top: 2vh;
+    left: 10%;  
+    overflow: auto;
 }
 
 
@@ -213,4 +286,279 @@ p {
 
 .KIDS {
     color: #3873FF;
+}
+
+
+/* Gestion du diaporama */
+.diaporama1 {
+    margin: 0 auto;
+    width: 960px;
+    height: 500px;
+    border: 3px solid #333;
+    background-image: url("img/img.jpg");
+
+    -webkit-animation-name: diapo1;
+    -webkit-animation-duration: 20s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: normal;
+
+    -moz-animation-name: diapo1;
+    -moz-animation-duration: 10s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-direction: normal;
+
+    animation-name: diapo1;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+@-webkit-keyframes diapo1 {
+    0%{background-image: url("img/img.jpg");}
+    33%{background-image: url("img/img_1.jpg");}
+    66%{background-image: url("img/img_2.jpg");}
+}
+
+@-moz-keyframes diapo1 {
+    0%{background-image: url("img/img.jpg");}
+    33%{background-image: url("img/img_1.jpg");}
+    66%{background-image: url("img/img_2.jpg");}
+}
+
+@keyframes diapo1 {
+    0%{background-image: url("img/img.jpg");}
+    33%{background-image: url("img/img_1.jpg");}
+    66%{background-image: url("img/img_2.jpg");}
+}
+
+/* .diaporama2 {
+    margin: 0 auto;
+    width: 960px;
+    height: 500px;
+    border: 3px solid #333;
+    background-image: url("img/img12.jpg");
+
+    -webkit-animation-name: diapo2;
+    -webkit-animation-duration: 12s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: normal;
+
+    -moz-animation-name: diapo2;
+    -moz-animation-duration: 12s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-direction: normal;
+
+    animation-name: diapo2;
+    animation-duration: 12s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+
+}
+
+@-webkit-keyframes diapo2 {
+    0%{background-position: 0px 0px;}
+    2%{background-position: 0px 0px;}
+    31%{background-position: -960px 0px;}
+    35%{background-position: -960px 0px;}
+    64%{background-position: -1920px 0px;}
+    68%{background-position: -1920px 0px;}
+    98%{background-position: -2880px 0px;}
+    100%{background-position: -2880px 0px;}
+}
+
+@-moz-keyframes diapo2 {
+    0%{background-position: 0px 0px;}
+    2%{background-position: 0px 0px;}
+    31%{background-position: -960px 0px;}
+    35%{background-position: -960px 0px;}
+    64%{background-position: -1920px 0px;}
+    68%{background-position: -1920px 0px;}
+    98%{background-position: -2880px 0px;}
+    100%{background-position: -2880px 0px;}
+}
+
+@keyframes diapo2 {
+    0%{background-position: 0px 0px;}
+    2%{background-position: 0px 0px;}
+    31%{background-position: -960px 0px;}
+    35%{background-position: -960px 0px;}
+    64%{background-position: -1920px 0px;}
+    68%{background-position: -1920px 0px;}
+    98%{background-position: -2880px 0px;}
+    100%{background-position: -2880px 0px;}
+} */
+
+.fa {
+    position: relative;
+    font-family: 'Gloria Hallelujah', cursive;
+    width: 80%;
+    text-align: center; 
+}
+
+h3 {
+    text-indent: 2.5em;
+    list-style: none;
+    font-size: 40px;
+    animation:flash 1.5s infinite ;
+}
+
+@keyframes flash {
+    50%{
+        color: red;
+        text-shadow: 0 0 5px;
+    }
+    70%{
+        color: green;
+        text-shadow: 0 0 5px;
+    }
+}
+
+
+p a{
+    list-style: none;
+    animation:flash1 1.5s infinite ;
+}
+
+@keyframes flash1 {
+    50%{
+        color: red;
+    }
+    60%{
+        color: yellow;
+    }
+}
+
+
+/* Gestion de la SECTION contenant la classe RIGHT et LEFT de dedicace.html*/
+.right {
+    margin-bottom: 20px;
+    padding: 10px;
+    margin-left: 20%;
+    float: right;
+    margin: 10px;
+}
+
+.droite p {
+    font-size: 1.2em;
+    font-weight: bolder;
+    text-align: center;
+    color: black;
+    width: 80%;
+    left: 10%;
+    margin: 45px;
+}
+
+
+.gauche p {
+    font-size: 1.2em;
+    font-weight: bolder;
+    text-align: center;
+    color: black;
+    width: 80%;
+    left: 10%;
+    margin: 45px;
+}
+
+h4 {
+    width: 80%;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    color: #FA3D21;
+    background-color: #58ACFA;
+    border-radius: 0 0 10px 10px;
+    text-transform: capitalize;
+    text-align: center;
+    margin: 25px;
+}
+
+.left {
+    margin-bottom: 20px;
+    padding: 10px;
+    margin: 15px;
+    float: left;
+}
+
+.clear {
+    clear: both;
+}
+
+aside {
+    display: inline-block;
+    width: 450px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, .8);
+    border-radius: 20px;
+    padding: 5px;
+    margin-bottom: 10px;
+    float: right;
+    border: 2px solid #0174DF;
+}
+
+.famille {
+    width: 40%;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 2px solid #0174DF;
+    float: left;
+    margin: 15px;
+    padding: 15px;
+} 
+
+ 
+
+/* Gestion de la SECTION contenant la classe POSITION */
+.position {
+    min-height: 50px;
+    border: 1px solid #aaa;
+    text-align: center;
+    padding: 22px;
+    width: 50%;
+    margin-left: 440px;
+}
+
+/* Gestion de a balise H2 contenu dans le pied de page */
+#connexion {
+    position: relative;
+    text-decoration: underline;
+    text-indent:1.5em;
+}
+
+* {
+    text-decoration: none;
+}
+
+/* Gestion du div contenu dans notre pied de page */
+footer div {
+    word-spacing: 100px;
+    padding: 20px;
+
+}
+
+
+/* Gestion du pied de page */
+
+.foot {
+    position: relative;
+    width: 80%;
+    left: 10%;
+    background-color: blanchedalmond;
+    border-radius:  5px;
+    /*border: 1px solid blue;*/
+    top: 2vh;
+}
+
+.footer {
+    width: 80%;
+    /*border: 1px solid blue;*/
+    margin: 55px;
+    text-align: center;
+    /*background-color: blanchedalmond;*/
+    border-radius:  5px;   
 }
