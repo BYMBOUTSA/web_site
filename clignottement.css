@@ -1,17 +1,55 @@
-body ul {
-	margin: 150px;
-	padding: 150px;
-	background-color: beige;
+/* Feuille de style de news.html */
+
+/* Importation d'une font */
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Lobster&family=Roboto+Condensed:wght@300&display=swap');
+
+body {
+	margin: 0px;
+	padding: 15px;
 	top: 10%;
 	left: 20%;
+	background-color: whitesmoke;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+
 }
 
-ul {
+/* Gestion du HEADER */
+h1, .menu-nav {
+    position: relative;
+    width: 80%;
+    text-align: center;
+    left: 5%; 
+}
+
+
+/* Gestion de la balise contenant en haut SVP */
+
+#up a {
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    background-color: #58ACFA;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+#up a:hover {
+    background-color: #fff;
+    color: #58ACFA;
+    border: 1px solid #58ACFA;
+    text-decoration: underline;
+}
+
+
+.change {
 	position: absolute;
 	display: flex; /*pour aligner les letres de manière horizontale */
 }
 
-ul li{
+.change li{
 	list-style: none; /*pour retirer les points qu'il y avait */
 	font-size: 40px; /*pour augmenter la taille de notre chaîne de caractère*/
 	letter-spacing: 10px; /*pour augmenter l'espace entre les lettres*/
@@ -73,15 +111,22 @@ ul li:nth-child(13){
 
 
 
-
-
-
 h2 {
 	color: blue;
+	text-align: center;
+	font-weight: bolder;
+	line-height: 2.5em;
+	max-height: 2.5em;
+	background-color: cyan;
+	border-radius: 15px;
 }
 
 h1 {
+	line-height: 2.5em;
 	border-style: inset;
+	padding: 20px;
+	max-height: 2.95em;
+	font-family: 'Gloria Hallelujah', cursive;
 }
 
 p.présentation a{
@@ -96,4 +141,90 @@ p.présentation a{
 	60%{
 		color: red;
 	}
+}
+
+
+/* Gestion du menu de navigation */
+
+nav.menu-nav ul li.btn {
+    display: inline-block;
+} 
+
+nav.menu-nav ul li.btn {
+    list-style-type: none;
+}
+
+nav.menu-nav ul li.btn a {
+    color: #ffffff;
+    background-color: #FA3D21;
+    text-decoration: none;
+    padding: 10px;
+}
+
+
+nav.menu-nav ul li.btn:hover a {
+    color: #FA3D21;
+    background-color: #43D0FA;
+    text-decoration: underline;
+    transition: 0.3s all;
+    border-radius: 20px;
+
+}
+
+
+/*###################################################*/
+/*              Gestion des pseudos éléments         */
+/*###################################################*/
+
+/* Gestion du pseudo élément de l'accueil */
+#acc::before {
+    content: url("img/LOGO KIDS20-FINAL.gif");
+    vertical-align: middle;
+    display: inline-block;
+}
+
+/* Gestion du pseudo élément de l'actualité */
+#act::before {
+    content: url(img/icon_news.png);
+    vertical-align: middle;
+    display: inline-block;
+}
+
+/* Gestion du pseudo élément du contact */
+#con::before {
+    content: url("img/icon_contact.jpg");
+    vertical-align: middle;
+    display: inline-block;
+}
+
+/* Gestion du pseudo élément de la dédicace */
+#de::before {
+    content: url("img/icon_dédicace.jpg");
+    vertical-align: middle;
+    display: inline-block;
+}
+
+
+/* Gestion du pied de page */
+footer .change{
+	position: relative;
+    width: 60%;
+    left: 10%;
+	padding: 160px;
+    border: 1px solid blue;
+	background-color: beige;
+    top: 2vh;
+	text-indent: 3em;
+	
+}
+
+footer p {
+	position: relative;
+    width: 80%;
+    left: 10%;
+    background-color: blanchedalmond;
+    border-radius:  5px;
+    /*border: 1px solid blue;*/
+    top: 2vh;
+	text-align: center;
 }
