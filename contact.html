@@ -4,109 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device=width, initial=scale=1.0">
     <meta name="Charly MOUNDOUNGA" content="Auteur ayant crée ce site web">
-    <!--<meta http-equiv="refresh" content="5"> <!-- Pour rafraîchir la page toute les 5 secondes -->
-    <link rel="icon"  type="image/gif" href="img/LOGO KIDS20-FINAL.gif" sizes="32x32">
+    <!--<meta http-equiv="refresh" content="5"> <! Pour rafraîchir la page toute les 5 secondes -->
+    <link rel="icon"  type="image/gif" href="img/LOGO_KIDS20-FINAL.gif" sizes="32x32">
     <title>Contactez-nous</title>
-    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" text="text/css" href="menu.css">
+    <link rel="stylesheet" type="text/css" href="contact.css">
 </head>
 <body>
-    
-    <header>
-        <center><h1>Contact</h1></center>
-        
-        <nav class="menu-nav">
-            <ul>
-                <li class="btn" id="acc">
-                    <a href="index.html">Accueil</a>
-                </li>
-                <li class="btn" id="act">
-                    <a href="news.html">Actualités</a>
-                </li>
-                <li class="btn" id="con">
-                    <a href="contact.html">Contact</a>
-                </li>
-                <li class="btn" id="de">
-                    <a href="dedicace.html">Dédicace</a>
-                </li>
-            </ul>
-        </nav>
-        <div id="up"><a href="#">En haut SVP !</a></div>
-    </header>
 
-    <section>
-        <article>
-            <h2 id="kids">Veuillez contacter les KIDS</h2>
-             <p>Par mail à l'adresse : <mark>leskids20@gmail.com</mark> </p>
-        </article>
-    </section>
-    
-    
-    <section>
-        <article>
-            <h2 class="fin">Veuillez me contacter</h2>
-            <p>Par mail à l'adresse :  <strong>charlymoundounga3@gmail.com</strong> </p>
-            <p>sur le snapchat suivant : Charly Moundounga</p>
-            <p>sur messenger : Charly Moundounga</p>
-            <p>sur linkedin : Charly Darcy BYMBOUTSA MOUNDOUNGA </p>
-        </article>
-    </section>
+  <header>
+    <div id="myLogo">
+      <h2>LES KIDS20</h2>
+    </div>
+      <nav class="menu-nav">
+          <label for="myBurger">☰</label>
+          <input type="checkbox" id="myBurger" name="myBurger">
+          <ul id="myListe">
+              <li class="btn" id="acc">
+                  <a href="#">Accueil</a>
+              </li>
+              <li class="btn" id="act">
+                  <a href="news.html">Actualités</a>
+              </li>
+              <li class="btn" id="con">
+                  <a href="contact.html">Contact</a>
+              </li>
+              <li class="btn" id="de">
+                  <a href="dedicace.html">Dédicace</a>
+              </li>
+          </ul>
+      </nav>
 
-    <!-- Deuxième méthode de formulaire -->
+  </header>  <!--Fin du haut de page-->
+
+    <!-- formulaire -->
     <div class="container">
-        <h2 id="forml">Créer Votre Compte</h2>
-        <input class="i" type="text" placeholder="Nom..." required><br>
-        <input class="i" type="text" placeholder="Prenom..." required><br>
-        <input class="i" type="email" placeholder="Email.." required><br>
-        <input class="i" type="text" placeholder="Username..." required><br>
-        <input class="i" type="password" placeholder="Mot de passe..." required><br>
-        <button>Se connecter</button>
-    </div> 
+        <form method="post" action="index.php">
+          <h2 id="forml">Formulaire de Contact</h2>
+          <fieldset>
+            <legend>Civilité</legend>
+            <label for="lastname">Nom</label>
+            <input class="i" type="text" id="lastname" name="lastname" placeholder="Entrez votre nom" required><br>
+            <label for="firstname">Prénom</label>
+            <input class="i" type="text" id="firstname" name="firstname" placeholder="Entrez votre prénom" required><br>
+            <label for="email">Email</label>
+            <input class="i" type="email"  id="email" name="email" placeholder="email@mail.com" required><br>
+            <label for="comment">Commentaires</label>
+            <textarea id="comment" name="comment" rows="10" columns="30" placeholder="Tapez, votre commentaire ici..."></textarea>
+          </fieldset>
+
+          <!--<fieldset>
+            <legend>Identifiants de connexion</legend>
+            <label for="username">Nom d'utilisateur</label>
+            <input class="i" type="text" id="username" name="usename" placeholder="Username..." required><br>
+            <label for="password">Mot de passe</label>
+            <input class="i" type="password" id="password" name="password" placeholder="Mot de passe..." required><br>
+          </fieldset> -->
+
+          <input type="submit" value="Envoyer"/>
+          <input type="reset" value="Annuler"/>
+
+          <!--<button type="submit">Envoyer</button>
+          <button type="reset">Annuler<button> -->
+      </form>
+    </div>
 
 
-    <!-- Troisième méthode de formulaire -->
-    <section>
-        <div class="conteneur">
-            <form class="form" action="#.php" method="POST">
-                <h4><u>Gestion d'un Formulaire</u></h4><br>
-
-                <fieldset>
-                    <legend>Infos Persos:</legend>
-                    <label for="Nom">Nom:</label>
-                    <input type="text" required="required" name="Nom" placeholder="Votre nom, SVP">
-                    <label for="prenom">Prenom:</label>
-                    <input type="text" name="prenom" id="prenom" placeholder="Votre prenom, SVP">
-
-                </fieldset>
-
-                <fieldset>
-                    <legend>Nouveautés</legend>
-                    <label for="tel">Téléphone:</label>
-                    <input type="tel" name="tel" id="tel" placeholder="Votre téléphone, SVP">
-                    <label for="date">Date:</label>
-                    <input type="date" name="date" id="date" placeholder="Date, SVP">
-                    <label for="file">Fichier:</label>
-                    <input type="file" name="file" id="file">
-                    <label for="number">Quel est votre pointure:</label>
-                    <input type="number" name="number" id="number" min="32" max="54" step="5" value="38">
-                    <label for="range">Volume:</label>
-                    <input type="range" name="range" id="range" min="00" max="100" step="1">
-                    <label for="color">Donnez une couleur:</label>
-                    <input type="color" name="color" id="color" value="#ccc">
-                    <label for="progress">Barre de progression:</label>
-                    <progress id="progress" name="progress" value="20" max="100"></progress>
-                </fieldset>
-                <br><br>
-                <p>
-                    <input type="submit" value="Envoyer"/>
-                    <input type="reset" value="Annuler"/>
-                </p>
-
-            </form>
-        </div>
-    </section>
-
-
-   <footer>
+   <aside>
         <ul class="bye">
             <li>G</li>
             <li>O</li>
@@ -128,8 +92,54 @@
 
         </ul>
 
-        <p>Copyright &copy; Charly Darcy for my family - 2021-2022 - All Right Reserved</p>
+    </aside>
 
+    <footer class="foot">
+
+        <h2 class="connexion">CONTACTEZ-NOUS</h2>
+        <div>
+            <h2 id="kids">Veuillez contacter les KIDS</h2>
+            <p>Par mail à l'adresse : <mark>leskids20@gmail.com</mark> </p>
+        </div>
+
+
+        <div>
+            <h2 class="fin">Veuillez me contacter</h2>
+                <p class="mod">Par mail à l'adresse :  <mark><strong>charlymoundounga3@gmail.com</strong></mark> </p>
+                <p class="mod">sur le snapchat suivant : <mark>Charly Moundounga</mark></p>
+                <p class="mod">sur messenger : <mark>Charly Moundounga</mark></p>
+                <p class="mod">sur linkedin : <mark>Charly Darcy BYMBOUTSA MOUNDOUNGA</mark> </p>
+        </div>
+
+
+        <h2 class="connexion">CONNECTEZ-VOUS</h2>
+        <div id="logos">
+            <a href="https://gmail.com" target="blank">
+                <img src="img/logo_gmail.jpg" alt="logo de gmail" width="70" title="Logo de Gmail">
+            </a>
+            <a href="https://accounts.snapchat.com" target="blank">
+                <img src="img/logo_snapchat.jpg" alt="logo de snapchat" width="70" title="Logo de Snapchat">
+            </a>
+            <a href="https://messenger.com" target="blank">
+                <img src="img/logo_messenger.png" alt="logo de messenger" width="70" title="Logo de Messenger">
+            </a>
+            <a href="https://linkedin.com" target="blank">
+                <img src="img/logo_linkedin.png" alt="logo de linkedin" width="70" title="Logo de Linkedin">
+            </a>
+            <a href="https://whatsapp.com" target="blank">
+                <img src="img/logo_whatsapp.png" alt="logo de whatsapp" width="70" title="Logo de Whatsapp">
+            </a>
+            <a href="https://facebook.com" target="blank">
+                <img src="img/logo_facebook.png" alt="logo de facebook" width="70" title="Logo de Facebook">
+            </a>
+            <a href="https://instagram.com" target="blank">
+                <img src="img/logo_instagram.png" alt="logo d'instagram" width="70" title="Logo de Instagram">
+            </a>
+        </div>
+        <p>Copyright &copy; Charly Darcy for my family - 2021-2022 - All Right Reserved</p>
     </footer>
+
+    <div id="up"><a href="#myLogo"><img src="img/arrow-up-solid.svg" alt="image du logo de retour" /></a></div>
+    
 </body>
 </html>

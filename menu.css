@@ -1,0 +1,305 @@
+/* Feuille de style de chacun des en-têtes de tous les fichiers html */
+
+/* Importation d'une font */
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Lobster&family=Roboto+Condensed:wght@300&display=swap');
+
+
+/* Reset du BODY */
+body {
+    /*padding: 15px;*/
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    background-color: whitesmoke;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+
+header{
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    height: 20vh;
+    background-color: #00BFFF;
+    padding: 10px;
+    box-shadow: 6px 6px 8px gray;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    align-items: center;
+    text-align: center;
+}
+
+/* Dimensionne le bloc DIV qui contient le H1 */
+header div {
+    box-sizing: border-box;
+    width: 20%;
+    padding: 0px;
+}
+
+/* Je mets en forme le H2 du HEADER */
+header div h2{
+    text-align: center;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.6em;
+    font-weight: bolder;
+    max-height: 0.4em;
+    padding: 0 0 20px 0;
+    margin-left: 6rem;
+}
+
+/* Gestion des divs contenant des items */
+.item-1  {
+    position: absolute;
+    width: 100px;
+    z-index: 3;
+    height: 50px;
+    background: #FFA500;
+}
+
+.item-2 {
+    position: absolute;
+    width: 100px;
+    z-index: 2;
+    height: 50px;
+    background: #800080;
+    top: 80px;
+    left: 60px;
+    text-align: right;
+}
+
+.item-3 {
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    z-index: 1;
+    background: #FFC0CB;
+    top: 120px;
+    left: 120px;
+    text-align: end;
+}
+
+
+/* Gestion de la balise contenant en haut SVP */
+
+#up a {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    bottom: 50px;
+    right: 50px;
+    background-color: #1E90FF;
+    color: #fff;
+    /*font-weight: bold;*/
+    border-radius: 25px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#up a:hover {
+    background-color: #fff;
+    color: #58ACFA;
+    border: 1px solid #58ACFA;
+    text-decoration: underline;
+}
+
+#up {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+  background:  #1E90FF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+#up img {
+    position: fixed;
+    bottom: 60px;
+    right: 60px;
+    width: 30px;
+}
+
+
+
+/*********************************/
+/* Gestion du menu de navigation */
+/*********************************/
+nav.menu-nav ul li.btn {
+    display: inline-block;
+}
+
+nav.menu-nav ul li.btn {
+    list-style-type: none;
+}
+
+nav.menu-nav ul li.btn a {
+    color: #ffffff;
+    background-color: #FA3D21;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+nav.menu-nav ul li.btn:hover a {
+    color: #FA3D21;
+    background-color: white;
+    text-decoration: underline;
+    transition: 0.3s all;
+    border-radius: 20px;
+}
+
+/****************************************************/
+/*        Suite de la gestion du menu nav           */
+/****************************************************/
+
+
+/* Pour changer la couleur du menu du Burger et agrandir le logo du Burger */
+header nav label{
+    font-size: 2.8em;
+    font-weight: bold;
+    color: blue;
+    margin: 0 1em 0 0;
+}
+
+/* Pour changer le curseur en pointeur */
+header nav label:hover{
+    cursor: pointer;
+}
+
+/* Lorsque je suis en mode plein écran je masque le Label */
+header nav label{
+    display: none;
+}
+
+
+/* Pour jouer avec le type d'agffichage de notre Menu */
+/*#myListe {
+    display: none;
+}*/
+
+#myBurger {
+    display: none;
+}
+
+
+#myBurger:checked ~ #myListe {
+    display: block;
+}
+
+
+/*###################################################*/
+/*              Gestion des pseudos éléments         */
+/*###################################################*/
+
+/* Gestion du pseudo élément de l'accueil */
+#acc::before {
+    content: url("img/LOGO_KIDS20-FINAL.gif");
+    vertical-align: middle;
+    display: inline-block;
+}
+
+/* Gestion du pseudo élément de l'actualité */
+#act::before {
+    content: url(img/icon_news.png);
+    vertical-align: middle;
+    display: inline-block;
+}
+
+/* Gestion du pseudo élément du contact */
+#con::before {
+    content: url("img/icon_contact.jpg");
+    vertical-align: middle;
+    display: inline-block;
+}
+
+/* Gestion du pseudo élément de la dédicace */
+#de::before {
+    content: url("img/icon_dédicace.jpg");
+    vertical-align: middle;
+    display: inline-block;
+}
+
+
+/****************************/
+/* Gestion du pied de page **/
+/***************************/
+
+/* Gestion de a balise H2 contenu dans le pied de page */
+.connexion {
+    position: relative;
+    text-decoration: underline;
+    text-indent: 1.5em;
+    color: red;
+    font-style: italic;
+}
+
+* {
+    text-decoration: none;
+    text-align: center;
+}
+
+/* Gestion du div contenu dans notre pied de page */
+#logos{
+    word-spacing: 100px;
+    padding: 20px;
+
+}
+
+.fin {
+    position: relative;
+    margin-top: 25px;
+    padding: 0px;
+    left: 2%;
+    text-decoration: underline;
+    color: #0174DF;
+    text-indent: 9.5em;
+}
+
+.mod{
+    position: relative;
+    width: 80%;
+    left: 4%;
+    padding-left: 10px;
+    font-size: 1.4em;
+    text-indent: 12em;
+}
+
+#kids {
+    position: relative;
+    text-decoration: underline;
+    text-indent: 9.5em;
+    color: #0174DF;
+    left: 2%;
+}
+
+.foot {
+    position: relative;
+    width: 100%;
+    background-color: blanchedalmond;
+    border-radius:  5px;
+    text-align: center;
+    top: 2vh;
+}
+
+
+/* Pied de page de dédicace.html */
+.footer {
+    clear: both;
+    position: relative;
+    width: 100%;
+    background-color: blanchedalmond;
+    border-radius:  5px;
+    text-align: center;
+    top: 400px;
+}

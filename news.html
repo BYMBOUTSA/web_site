@@ -4,52 +4,52 @@
      <meta charset="UTF-8">
     <meta name="viewport" content="width=device=width, initial=scale=1.0">
     <meta name="Charly MOUNDOUNGA" content="Auteur ayant crée ce site web">
-    <!--<meta http-equiv="refresh" content="5"> <!-- Pour rafraîchir la page toute les 5 secondes -->
-    <link rel="icon"  type="image/gif" href="img/LOGO KIDS20-FINAL.gif" sizes="32x32">
+    <!--<meta http-equiv="refresh" content="5"> <! Pour rafraîchir la page toute les 5 secondes -->
+    <link rel="icon"  type="image/gif" href="img/LOGO_KIDS20-FINAL.gif" sizes="32x32">
     <title>Actus</title>
+    <link rel="stylesheet" type="text/css" href="menu.css">
     <link rel="stylesheet" type="text/css" href="clignottement.css">
 </head>
 <body>
 
+  <header>
+    <div id="myLogo">
+      <h2>LES KIDS20</h2>
+    </div>
+      <nav class="menu-nav">
+          <label for="myBurger">☰</label>
+          <input type="checkbox" id="myBurger" name="myBurger">
+          <ul id="myListe">
+              <li class="btn" id="acc">
+                  <a href="index.html">Accueil</a>
+              </li>
+              <li class="btn" id="act">
+                  <a href="#">Actualités</a>
+              </li>
+              <li class="btn" id="con">
+                  <a href="contact.html">Contact</a>
+              </li>
+              <li class="btn" id="de">
+                  <a href="dedicace.html">Dédicace</a>
+              </li>
+          </ul>
+      </nav>
 
-    <header>
-        <h1>Les différentes actus de notre site</h1>
+  </header>
 
-        <nav class="menu-nav">
-            <ul>
-                <li class="btn" id="acc">
-                    <a href="index.html">Accueil</a>
-                </li>
-                <li class="btn" id="act">
-                    <a href="news.html">Actualités</a>
-                </li>
-                <li class="btn" id="con">
-                    <a href="contact.html">Contact</a>
-                </li>
-                <li class="btn" id="de">
-                    <a href="dedicace.html">Dédicace</a>
-                </li>
-            </ul>
-        </nav>
-        <div id="up"><a href="#">En haut SVP !</a></div>
-        <h2>Première actualité : </h2>
-    </header> 
 
-       
 
     <section>
-        <article>
-            <center>
-                <h3>Vidéo de présentation du Call Weekend</h3>
+        <article class="center">
+            <h3>Vidéo de présentation du Call Weekend</h3>
             <p class="présentation">Pour visualiser la vidéo cliquez <a href="https://youtu.be/Mn9uMhGa20c" target="_blank">ICI</a></p>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/Mn9uMhGa20c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </center>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Mn9uMhGa20c" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </article>
     </section>
-    
-    
-   
-    <footer>
+
+
+
+    <aside>
 
         <ul class="change">
             <li>C</li>
@@ -65,8 +65,54 @@
             <li>N</li>
             <li>D</li>
         </ul>
+    </aside>
+
+    <footer class="foot">
+
+        <h2 class="connexion">CONTACTEZ-NOUS</h2>
+        <div>
+            <h2 id="kids">Veuillez contacter les KIDS</h2>
+            <p>Par mail à l'adresse : <mark>leskids20@gmail.com</mark> </p>
+        </div>
+
+
+        <div>
+            <h2 class="fin">Veuillez me contacter</h2>
+                <p class="mod">Par mail à l'adresse :  <mark><strong>charlymoundounga3@gmail.com</strong></mark> </p>
+                <p class="mod">sur le snapchat suivant : <mark>Charly Moundounga</mark></p>
+                <p class="mod">sur messenger : <mark>Charly Moundounga</mark></p>
+                <p class="mod">sur linkedin : <mark>Charly Darcy BYMBOUTSA MOUNDOUNGA</mark> </p>
+        </div>
+
+
+        <h2 class="connexion">CONNECTEZ-VOUS</h2>
+        <div id="logos">
+            <a href="https://gmail.com" target="blank">
+                <img src="img/logo_gmail.jpg" alt="logo de gmail" width="70" title="Logo de Gmail">
+            </a>
+            <a href="https://accounts.snapchat.com" target="blank">
+                <img src="img/logo_snapchat.jpg" alt="logo de snapchat" width="70" title="Logo de Snapchat">
+            </a>
+            <a href="https://messenger.com" target="blank">
+                <img src="img/logo_messenger.png" alt="logo de messenger" width="70" title="Logo de Messenger">
+            </a>
+            <a href="https://linkedin.com" target="blank">
+                <img src="img/logo_linkedin.png" alt="logo de linkedin" width="70" title="Logo de Linkedin">
+            </a>
+            <a href="https://whatsapp.com" target="blank">
+                <img src="img/logo_whatsapp.png" alt="logo de whatsapp" width="70" title="Logo de Whatsapp">
+            </a>
+            <a href="https://facebook.com" target="blank">
+                <img src="img/logo_facebook.png" alt="logo de facebook" width="70" title="Logo de Facebook">
+            </a>
+            <a href="https://instagram.com" target="blank">
+                <img src="img/logo_instagram.png" alt="logo d'instagram" width="70" title="Logo de Instagram">
+            </a>
+        </div>
         <p>Copyright &copy; Charly Darcy for my family - 2021-2022 - All Right Reserved</p>
     </footer>
-    
+
+    <div id="up"><a href="#myLogo"><img src="img/arrow-up-solid.svg" alt="image du logo de retour" /></a></div>
+
 </body>
 </html>

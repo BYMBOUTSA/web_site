@@ -4,25 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device=width, initial=scale=1.0">
     <meta name="Charly MOUNDOUNGA" content="Auteur ayant crée ce site web">
-    <!--<meta http-equiv="refresh" content="5"> <!-- Pour rafraîchir la page toute les 5 secondes -->
+    <!--<meta http-equiv="refresh" content="5"> <! Pour rafraîchir la page toute les 5 secondes -->
     <title>LESKIDS20</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="icon"  type="image/gif" href="img/LOGO KIDS20-FINAL.gif" sizes="32x32">
+    <link rel="stylesheet" type="text/css" media="screen" href="menu.css">
+    <link rel="icon"  type="image/gif" href="img/LOGO_KIDS20-FINAL.gif" sizes="32x32">
     <link rel="stylesheet" type="text/css" media="screen" href="style.css">
 </head>
 <body>
 
-    <h1 class="welcome">Welcome on my first website !</h1>
-
   <!-- Haut de page -->
     <header>
-        <img src="img/LOGO KIDS20-FINAL.png" width="170" alt="Logo des KIDS20">
-        <img src="img/accueil2.jpg" width="160" alt="Photo d'internet sur la famille">
-    
+      <div id="myLogo">
+        <div class="item-1">LES</div>
+        <div class="item-2">KIDS</div>
+        <div class="item-3">20</div>
+        <h2>LES KIDS20</h2>
+      </div>
         <nav class="menu-nav">
-            <ul>
+            <label for="myBurger">☰</label>
+            <input type="checkbox" id="myBurger" name="myBurger">
+            <ul id="myListe">
                 <li class="btn" id="acc">
-                    <a href="index.html">Accueil</a>
+                    <a href="#">Accueil</a>
                 </li>
                 <li class="btn" id="act">
                     <a href="news.html">Actualités</a>
@@ -35,51 +38,54 @@
                 </li>
             </ul>
         </nav>
-        <div id="up"><a href="#">En haut SVP !</a></div>
+
+
     </header>  <!--Fin du haut de page-->
 
+    <p class="img-logo"><img src="img/LOGO_KIDS20-FINAL.png" width="170" alt="Logo des KIDS20">
+    <img src="img/accueil2.jpg" width="160" alt="Photo d'internet sur la famille"></p>
 
     <!-- Début de la SECTION-->
     <section>
         <article>
             <h2>Parcourez-le comme vous voulez</h2>
-    
+
             <div id="content">
                 <div class="leftbox">
-        
+
                     <div class="annonce">
                         <h1>Photo de nos mères</h1>
-                        <img src="img/IMG_0388.jpg" width="100" alt="Photo de maman Evelyne">
+                        <img class="img-annonce" src="img/IMG_0388.jpg" width="100" alt="Photo de maman Evelyne">
                     </div>
                     <div class="annonce">
-            
-                        <img src="img/IMG_01.JPG" width="100" alt="Photo de maman Jeanne">
+
+                        <img class="img-annonce" src="img/IMG_01.JPG" width="100" alt="Photo de maman Jeanne">
                     </div>
-                    
+
                     <div class="plus">
                         <p class="parents">Pour visualiser plus de photos des parents cliquez <a href="https://github.com/BYMBOUTSA/img_famille/tree/master/img_parents" target="_blank">ICI</a></p>
                     </div>
-        
+
                 </div>
-                
+
                 <div class="rightbox">
                     <h1>Photo des petits enfants</h1>
-                    <img src="img/family_1.JPG" width="250" height="250" alt="Photo des KIDS20">
-        
+                    <img class="img-rightbox" src="img/family_1.JPG" alt="Photo des KIDS20">
+
                     <div class="contenu">
                         <p class="KIDS">Pour visualiser plus de photo des KIDS cliquez <a href="https://github.com/BYMBOUTSA/img_famille/tree/master/img_petits_enfants" target="_blank">ICI</a></p>
                     </div>
-        
+
                 </div>
-                
+
             </div>
         </article>
     </section> <!-- Fin de la SECTION-->
-    
 
-       
+
+
     <p>Pour visualiser à nouveau les vidéos des anniversaires : <a href="https://youtube.com/playlist?list=PLIM5QzxNxwEgUNnozGYIG23rQKV8yFKUz" target="_blank">Cliquez ici</a></p>
-    
+
 
     <section>
         <article>
@@ -87,19 +93,19 @@
 
             <!--  Première méthode -->
           <div class="diaporama1">
-              
-       
+
+
           </div>
-       
-       
+
+
           <!-- Deuxième méthode -->
           <div class="diaporama2">
-              
+
           </div>
-       
-           <p class="vidéo">Pour visualiser la vidéo de présentation du site, cliquez <a href="img/vidéo_présentation.mp4" target="_blank">ICI</a></p> 
+
+           <p class="vidéo">Pour visualiser la vidéo de présentation du site, cliquez <a href="img/vidéo_présentation.mp4" target="_blank">ICI</a></p>
            <!-- <video width="560" height="320" controls>
-               <source src="vidéo_présentation.mp4" type="video/mp4">        
+               <source src="vidéo_présentation.mp4" type="video/mp4">
                <source src="vidéo_présentation.webm" type="video/webm">
                <source src="vidéo_présentation.ogv" type="video/ogg">
            </video> -->
@@ -111,40 +117,59 @@
         <article>
             <h3>localisation</h3>
             <div class="position">
-                <iframe src="https://www.google.com/maps/embed?pb=!4v1635038232695!6m8!1m7!1sENKgTtM0fpuJXaEdpxiaKw!2m2!1d43.68122331910789!2d7.226558632034426!3f180!4f0!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!4v1639252116855!6m8!1m7!1sENKgTtM0fpuJXaEdpxiaKw!2m2!1d43.68122680792519!2d7.22655756253564!3f180!4f0!5f0.5970117501821992" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </article>
     </section>
-      
+
 
     <!-- Pied de page -->
     <footer class="foot">
-        
-        <h2 id="connexion">Connectez-vous </h2>
+
+        <h2 class="connexion">CONTACTEZ-NOUS</h2>
+        <div>
+            <h2 id="kids">Veuillez contacter les KIDS</h2>
+            <p>Par mail à l'adresse : <mark>leskids20@gmail.com</mark> </p>
+        </div>
+
+
+        <div>
+            <h2 class="fin">Veuillez me contacter</h2>
+                <p class="mod">Par mail à l'adresse :  <mark><strong>charlymoundounga3@gmail.com</strong></mark> </p>
+                <p class="mod">sur le snapchat suivant : <mark>Charly Moundounga</mark></p>
+                <p class="mod">sur messenger : <mark>Charly Moundounga</mark></p>
+                <p class="mod">sur linkedin : <mark>Charly Darcy BYMBOUTSA MOUNDOUNGA</mark> </p>
+        </div>
+
+
+        <h2 class="connexion">CONNECTEZ-VOUS</h2>
         <div id="logos">
             <a href="https://gmail.com" target="blank">
-                <img src="img/logo_gmail.jpg" alt="logo de gmail" width="70px" title="Logo de Gmail">
+                <img src="img/logo_gmail.jpg" alt="logo de gmail" width="70" title="Logo de Gmail">
             </a>
             <a href="https://accounts.snapchat.com" target="blank">
-                <img src="img/logo_snapchat.jpg" alt="logo de snapchat" width="70px" title="Logo de Snapchat">
+                <img src="img/logo_snapchat.jpg" alt="logo de snapchat" width="70" title="Logo de Snapchat">
             </a>
             <a href="https://messenger.com" target="blank">
-                <img src="img/logo_messenger.png" alt="logo de messenger" width="70px" title="Logo de Messenger">
+                <img src="img/logo_messenger.png" alt="logo de messenger" width="70" title="Logo de Messenger">
             </a>
             <a href="https://linkedin.com" target="blank">
-                <img src="img/logo_linkedin.png" alt="logo de linkedin" width="70px" title="Logo de Linkedin">
+                <img src="img/logo_linkedin.png" alt="logo de linkedin" width="70" title="Logo de Linkedin">
             </a>
             <a href="https://whatsapp.com" target="blank">
-                <img src="img/logo_whatsapp.png" alt="logo de whatsapp" width="70px" title="Logo de Whatsapp">
+                <img src="img/logo_whatsapp.png" alt="logo de whatsapp" width="70" title="Logo de Whatsapp">
             </a>
             <a href="https://facebook.com" target="blank">
-                <img src="img/logo_facebook.png" alt="logo de facebook" width="70px" title="Logo de Facebook">
+                <img src="img/logo_facebook.png" alt="logo de facebook" width="70" title="Logo de Facebook">
             </a>
             <a href="https://instagram.com" target="blank">
-                <img src="img/logo_instagram.png" alt="logo d'instagram" width="70px" title="Logo de Instagram">
+                <img src="img/logo_instagram.png" alt="logo d'instagram" width="70" title="Logo de Instagram">
             </a>
         </div>
         <p>Copyright &copy; Charly Darcy for my family - 2021-2022 - All Right Reserved</p>
     </footer>
+
+    <div id="up"><a href="#myLogo"><img src="img/arrow-up-solid.svg" alt="image du logo de retour" /></a></div>
+    
 </body>
-</html> 
+</html>
