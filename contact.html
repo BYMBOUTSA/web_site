@@ -1,145 +1,220 @@
 <!DOCTYPE html>
 <html lang="fr-FR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device=width, initial=scale=1.0">
-    <meta name="Charly MOUNDOUNGA" content="Auteur ayant crée ce site web">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device=width, initial=scale=1.0" />
+    <meta name="Charly MOUNDOUNGA" content="Auteur ayant crée ce site web" />
     <!--<meta http-equiv="refresh" content="5"> <! Pour rafraîchir la page toute les 5 secondes -->
-    <link rel="icon"  type="image/gif" href="img/LOGO_KIDS20-FINAL.gif" sizes="32x32">
+    <link
+      rel="icon"
+      type="image/gif"
+      href="img/LOGO_KIDS20-FINAL.gif"
+      sizes="32x32"
+    />
     <title>Contactez-nous</title>
-    <link rel="stylesheet" text="text/css" href="menu.css">
-    <link rel="stylesheet" type="text/css" href="contact.css">
-</head>
-<body>
-
-  <header>
-    <div id="myLogo">
-      <h2>LES KIDS20</h2>
-    </div>
+    <link rel="stylesheet" text="text/css" href="menu.css" />
+    <link rel="stylesheet" type="text/css" href="contact.css" />
+  </head>
+  <body>
+    <header>
+      <div id="myLogo">
+        <h2>LES KIDS20</h2>
+      </div>
       <nav class="menu-nav">
-          <label for="myBurger">☰</label>
-          <input type="checkbox" id="myBurger" name="myBurger">
-          <ul id="myListe">
-              <li class="btn" id="acc">
-                  <a href="#">Accueil</a>
-              </li>
-              <li class="btn" id="act">
-                  <a href="news.html">Actualités</a>
-              </li>
-              <li class="btn" id="con">
-                  <a href="contact.html">Contact</a>
-              </li>
-              <li class="btn" id="de">
-                  <a href="dedicace.html">Dédicace</a>
-              </li>
-          </ul>
+        <label for="myBurger">☰</label>
+        <input type="checkbox" id="myBurger" name="myBurger" />
+        <ul id="myListe">
+          <li class="btn" id="acc">
+            <a href="#">Accueil</a>
+          </li>
+          <li class="btn" id="act">
+            <a href="news.html">Actualités</a>
+          </li>
+          <li class="btn" id="con">
+            <a href="contact.html">Contact</a>
+          </li>
+          <li class="btn" id="de">
+            <a href="dedicace.html">Dédicace</a>
+          </li>
+        </ul>
       </nav>
-
-  </header>  <!--Fin du haut de page-->
+    </header>
+    <!--Fin du haut de page-->
 
     <!-- formulaire -->
     <div class="container">
-        <form method="post" action="index.php">
-          <h2 id="forml">Formulaire de Contact</h2>
-          <fieldset>
-            <legend>Civilité</legend>
-            <label for="lastname">Nom</label>
-            <input class="i" type="text" id="lastname" name="lastname" placeholder="Entrez votre nom" required><br>
-            <label for="firstname">Prénom</label>
-            <input class="i" type="text" id="firstname" name="firstname" placeholder="Entrez votre prénom" required><br>
-            <label for="email">Email</label>
-            <input class="i" type="email"  id="email" name="email" placeholder="email@mail.com" required><br>
-            <label for="comment">Commentaires</label>
-            <textarea id="comment" name="comment" rows="10" columns="30" placeholder="Tapez, votre commentaire ici..."></textarea>
-          </fieldset>
+      <form method="post" action="index.php">
+        <h2 id="forml">Formulaire de Contact</h2>
+        <fieldset>
+          <legend>Civilité</legend>
+          <label for="lastname">Nom</label>
+          <input
+            class="i"
+            type="text"
+            id="lastname"
+            name="lastname"
+            placeholder="Entrez votre nom"
+          /><br />
+          <label for="firstname">Prénom</label>
+          <input
+            class="i"
+            type="text"
+            id="firstname"
+            name="firstname"
+            placeholder="Entrez votre prénom"
+          /><br />
+          <label for="email">Email</label>
+          <input
+            class="i"
+            type="email"
+            id="email"
+            name="email"
+            placeholder="email@mail.com"
+          /><br />
+          <label for="comment">Commentaires</label>
+          <textarea
+            id="comment"
+            name="comment"
+            rows="10"
+            columns="30"
+            placeholder="Tapez, votre commentaire ici..."
+          ></textarea>
+        </fieldset>
 
-          <!--<fieldset>
-            <legend>Identifiants de connexion</legend>
-            <label for="username">Nom d'utilisateur</label>
-            <input class="i" type="text" id="username" name="usename" placeholder="Username..." required><br>
-            <label for="password">Mot de passe</label>
-            <input class="i" type="password" id="password" name="password" placeholder="Mot de passe..." required><br>
-          </fieldset> -->
+        <div class="newsletter">
+          <input
+            type="checkbox"
+            name="consentement"
+            id="consentement"
+          />J'accepte de recevoir la newsletter.
+        </div>
+        <div class="newsletter">
+          Ainsi que des informations partenaires ?
+          <input type="radio" name="btn-radio" value="oui" />Oui
+          <input type="radio" name="btn-radio" value="non" />Non
+        </div>
 
-          <input type="submit" value="Envoyer"/>
-          <input type="reset" value="Annuler"/>
-
-          <!--<button type="submit">Envoyer</button>
-          <button type="reset">Annuler<button> -->
+        <input type="submit" value="Envoyer" />
+        <input type="reset" value="Annuler" />
       </form>
     </div>
+    <div id="message"></div>
 
-
-   <aside>
-        <ul class="bye">
-            <li>G</li>
-            <li>O</li>
-            <li>D</li>
-            <li>_</li>
-            <li>B</li>
-            <li>L</li>
-            <li>E</li>
-            <li>S</li>
-            <li>S</li>
-            <li>_</li>
-            <li>Y</li>
-            <li>O</li>
-            <li>U</li>
-            <li>_</li>
-            <li>A</li>
-            <li>L</li>
-            <li>L</li>
-
-        </ul>
-
+    <aside>
+      <ul class="bye">
+        <li>G</li>
+        <li>O</li>
+        <li>D</li>
+        <li>_</li>
+        <li>B</li>
+        <li>L</li>
+        <li>E</li>
+        <li>S</li>
+        <li>S</li>
+        <li>_</li>
+        <li>Y</li>
+        <li>O</li>
+        <li>U</li>
+        <li>_</li>
+        <li>A</li>
+        <li>L</li>
+        <li>L</li>
+      </ul>
     </aside>
 
     <footer class="foot">
+      <h2 class="connexion">CONTACTEZ-NOUS</h2>
+      <div>
+        <h2 id="kids">Veuillez contacter les KIDS</h2>
+        <p>Par mail à l'adresse : <mark>leskids20@gmail.com</mark></p>
+      </div>
 
-        <h2 class="connexion">CONTACTEZ-NOUS</h2>
-        <div>
-            <h2 id="kids">Veuillez contacter les KIDS</h2>
-            <p>Par mail à l'adresse : <mark>leskids20@gmail.com</mark> </p>
-        </div>
+      <div>
+        <h2 class="fin">Veuillez me contacter</h2>
+        <p class="mod">
+          Par mail à l'adresse :
+          <mark><strong>charlymoundounga3@gmail.com</strong></mark>
+        </p>
+        <p class="mod">
+          sur le snapchat suivant : <mark>Charly Moundounga</mark>
+        </p>
+        <p class="mod">sur messenger : <mark>Charly Moundounga</mark></p>
+        <p class="mod">
+          sur linkedin : <mark>Charly Darcy BYMBOUTSA MOUNDOUNGA</mark>
+        </p>
+      </div>
 
-
-        <div>
-            <h2 class="fin">Veuillez me contacter</h2>
-                <p class="mod">Par mail à l'adresse :  <mark><strong>charlymoundounga3@gmail.com</strong></mark> </p>
-                <p class="mod">sur le snapchat suivant : <mark>Charly Moundounga</mark></p>
-                <p class="mod">sur messenger : <mark>Charly Moundounga</mark></p>
-                <p class="mod">sur linkedin : <mark>Charly Darcy BYMBOUTSA MOUNDOUNGA</mark> </p>
-        </div>
-
-
-        <h2 class="connexion">CONNECTEZ-VOUS</h2>
-        <div id="logos">
-            <a href="https://gmail.com" target="blank">
-                <img src="img/logo_gmail.jpg" alt="logo de gmail" width="70" title="Logo de Gmail">
-            </a>
-            <a href="https://accounts.snapchat.com" target="blank">
-                <img src="img/logo_snapchat.jpg" alt="logo de snapchat" width="70" title="Logo de Snapchat">
-            </a>
-            <a href="https://messenger.com" target="blank">
-                <img src="img/logo_messenger.png" alt="logo de messenger" width="70" title="Logo de Messenger">
-            </a>
-            <a href="https://linkedin.com" target="blank">
-                <img src="img/logo_linkedin.png" alt="logo de linkedin" width="70" title="Logo de Linkedin">
-            </a>
-            <a href="https://whatsapp.com" target="blank">
-                <img src="img/logo_whatsapp.png" alt="logo de whatsapp" width="70" title="Logo de Whatsapp">
-            </a>
-            <a href="https://facebook.com" target="blank">
-                <img src="img/logo_facebook.png" alt="logo de facebook" width="70" title="Logo de Facebook">
-            </a>
-            <a href="https://instagram.com" target="blank">
-                <img src="img/logo_instagram.png" alt="logo d'instagram" width="70" title="Logo de Instagram">
-            </a>
-        </div>
-        <p>Copyright &copy; Charly Darcy for my family - 2021-2022 - All Right Reserved</p>
+      <h2 class="connexion">CONNECTEZ-VOUS</h2>
+      <div id="logos">
+        <a href="https://gmail.com" target="blank">
+          <img
+            src="img/logo_gmail.jpg"
+            alt="logo de gmail"
+            width="70"
+            title="Logo de Gmail"
+          />
+        </a>
+        <a href="https://accounts.snapchat.com" target="blank">
+          <img
+            src="img/logo_snapchat.jpg"
+            alt="logo de snapchat"
+            width="70"
+            title="Logo de Snapchat"
+          />
+        </a>
+        <a href="https://messenger.com" target="blank">
+          <img
+            src="img/logo_messenger.png"
+            alt="logo de messenger"
+            width="70"
+            title="Logo de Messenger"
+          />
+        </a>
+        <a href="https://linkedin.com" target="blank">
+          <img
+            src="img/logo_linkedin.png"
+            alt="logo de linkedin"
+            width="70"
+            title="Logo de Linkedin"
+          />
+        </a>
+        <a href="https://whatsapp.com" target="blank">
+          <img
+            src="img/logo_whatsapp.png"
+            alt="logo de whatsapp"
+            width="70"
+            title="Logo de Whatsapp"
+          />
+        </a>
+        <a href="https://facebook.com" target="blank">
+          <img
+            src="img/logo_facebook.png"
+            alt="logo de facebook"
+            width="70"
+            title="Logo de Facebook"
+          />
+        </a>
+        <a href="https://instagram.com" target="blank">
+          <img
+            src="img/logo_instagram.png"
+            alt="logo d'instagram"
+            width="70"
+            title="Logo de Instagram"
+          />
+        </a>
+      </div>
+      <p>
+        Copyright &copy; Charly Darcy for my family - 2021-2022 - All Right
+        Reserved
+      </p>
     </footer>
 
-    <div id="up"><a href="#myLogo"><img src="img/arrow-up-solid.svg" alt="image du logo de retour" /></a></div>
-    
-</body>
+    <div id="up">
+      <a href="#myLogo"
+        ><img src="img/arrow-up-solid.svg" alt="image du logo de retour"
+      /></a>
+    </div>
+
+    <script src="js/contact.js"></script>
+  </body>
 </html>
